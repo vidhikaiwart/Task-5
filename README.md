@@ -93,7 +93,6 @@ nucleus/
 │   ├── validators/
 │   │   └── authValidator.js   # Input validation
 │   ├── .env                   # Environment variables
-│   ├── makeAdmin.js           # CLI tool to promote users
 │   ├── package.json
 │   └── server.js              # Entry point
 │
@@ -360,32 +359,4 @@ http://localhost:5000/api/auth
 
 ---
 
-## Making a User Admin
 
-### Option 1: Register as Admin
-1. Go to `/register`
-2. Select "Admin" from the role dropdown
-3. Register
-
-### Option 2: Use CLI Tool
-```bash
-cd backend
-node makeAdmin.js user@example.com
-```
-
----
-
-## Security Features
-
-- **Password Hashing:** Bcrypt with 10 salt rounds
-- **JWT Tokens:** Access tokens (15min) and refresh tokens (7 days)
-- **Refresh Token Rotation:** New refresh token on each use
-- **CORS:** Configured for specific origins
-- **Helmet:** Security headers
-- **Input Validation:** Express-validator on all inputs
-
----
-
-## License
-
-MIT

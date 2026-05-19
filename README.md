@@ -1,4 +1,4 @@
-# Nucleus - Authentication System
+Authentication System
 
 A full-stack authentication system with role-based access control, built with React, Redux, Node.js, Express, and MongoDB.
 
